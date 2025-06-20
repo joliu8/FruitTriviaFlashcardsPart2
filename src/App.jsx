@@ -12,7 +12,6 @@ function App() {
           <h1>🍓 🍊 🍌 🥑 🫐 🍇 Fruit Trivia!🍓 🍊 🍌 🥑 🫐 🍇</h1>
 
           <h3>Welcome to Fruit Trivia! In this game, you will be asked random questions about fruits. </h3>
-          <h1></h1>
         </div>
         <Cards />
       </div>
