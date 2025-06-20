@@ -1,4 +1,4 @@
-# Web Development Project 3 - *Name of App Here*
+# Web Development Project 3 - *Fruit Trivia Part 2*
 
 Submitted by: Joyce Liu
 
@@ -45,7 +45,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='project3walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [LICEcap](https://www.cockos.com/licecap/) for macOS
@@ -58,9 +58,11 @@ GIF created with [LICEcap](https://www.cockos.com/licecap/) for macOS
 
 Describe any challenges encountered while building the app.
 
+Refactoring my code from part 1. 
+
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2025] [Joyce Liu]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
