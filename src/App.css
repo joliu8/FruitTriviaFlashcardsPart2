@@ -1,0 +1,117 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.base{
+  padding: 20px;
+  background-color: rgba(255, 247, 217, 0.35);
+}
+
+.description{
+  color: white;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #8c8282;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+/* what the card looks like */
+.flashcard {
+  width: 100vh;
+  height: 50vh;
+  perspective: 1000px; /*set up 3d perspective*/
+  color: black;
+  background-color: rgb(random);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 30vh;
+  }
+}
+
+
+.front,
+.back {
+  position: absolute; /*both sides of the card overlap each other and share these properties*/
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* reverse side hidden when rotating*/
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid white;
+}
+
+/*initally front side showing*/
+.front {
+  transform: rotateY(0deg);
+}
+
+/*initally back side hidden*/
+.back {
+  transform: rotateY(180deg);
+  display:flex;
+  flex-direction: column;
+}
+
+/* when the flashcard is flipped, make front side rotate on y-axis -180 degrees*/
+.flashcard.flipped .front { 
+  transform: rotateY(-180deg);
+}
+
+/* when the flashcard is flipped, make back side rotate on y-axis 0 degrees*/
+.flashcard.flipped .back {
+  transform: rotateY(0deg);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.nav {
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#wrong {
+  background-color: rgb(219, 93, 93);
+}
+
+#correct {
+  background-color: rgb(116, 191, 141);
+}
+
+.textbox{
+  width: 300px;
+}
